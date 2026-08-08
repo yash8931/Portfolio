@@ -1,0 +1,62 @@
+:root {
+  /* Colors */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1f5f9;
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+
+  --color-border: #e2e8f0;
+
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+
+  --color-accent: #06b6d4;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.05);
+  --shadow-md: 0 10px 30px rgb(15 23 42 / 0.08);
+  --shadow-lg: 0 20px 50px rgb(15 23 42 / 0.12);
+
+  /* Layout */
+  --container-width: 1200px;
+  --page-padding: 1.25rem;
+
+  /* Animation */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-padding: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --page-padding: 3rem;
+  }
+}

@@ -1,10 +1,29 @@
-import './App.css'
+import PageLayout from "./components/layout/PageLayout";
+
+import Hero from "./components/sections/Hero/Hero";
+import About from "./components/sections/About/About";
+import Experience from "./components/sections/Experience/Experience";
+import SkillsProjects from "./components/sections/SkillsProjects";
+import Achievements from "./components/sections/Achievements/Achievements";
 
 function App() {
   return (
-    <h1 className="text-5xl font-bold text-center mt-20">
-      Portfolio Setup Complete 🚀
-    </h1>
+    <PageLayout>
+      {/* Hero */}
+      <Hero />
+
+      {/* About */}
+      <About />
+
+      {/* Work Experience */}
+      <Experience />
+
+      {/* Skills + Projects */}
+      <SkillsProjects />
+
+      {/* Achievements + GitHub + Testimonial + Contact */}
+      <Achievements />
+    </PageLayout>
   );
 }
 
