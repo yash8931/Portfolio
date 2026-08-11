@@ -153,7 +153,7 @@ function TechnologyIcon({ technology }) {
     .toUpperCase();
 
   return (
-    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-50 to-fuchsia-50">
+    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-indigo-50 to-fuchsia-50">
       <span className="text-[10px] font-bold text-indigo-600">{initials}</span>
     </div>
   );
@@ -167,10 +167,10 @@ function SkillCategory({ skill }) {
   };
 
   return (
-    <article className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-[var(--shadow-sm)] transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-[var(--shadow-md)] sm:p-7">
+    <article className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-(--shadow-sm) transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-(--shadow-md) sm:p-7">
       {/* Decorative gradient */}
       <div
-        className={`absolute right-0 top-0 h-32 w-32 rounded-full bg-gradient-to-br ${meta.accent} opacity-[0.07] blur-2xl transition-opacity duration-300 group-hover:opacity-[0.12]`}
+        className={`absolute right-0 top-0 h-32 w-32 rounded-full bg-linear-to-br ${meta.accent} opacity-[0.07] blur-2xl transition-opacity duration-300 group-hover:opacity-[0.12]`}
         aria-hidden="true"
       />
 

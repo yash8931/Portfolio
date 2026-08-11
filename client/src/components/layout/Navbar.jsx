@@ -25,7 +25,7 @@ function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/85 backdrop-blur-xl">
       <Container>
-        <nav className="flex h-[68px] items-center justify-between">
+        <nav className="flex h-17 items-center justify-between">
           {/* Logo */}
           <Link to="/" onClick={closeMenu} className="flex items-center gap-3">
             <img

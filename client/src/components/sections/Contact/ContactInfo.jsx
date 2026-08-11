@@ -23,7 +23,7 @@ const contactItems = [
 
 function ContactInfo() {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-slate-950 p-6 text-white shadow-[var(--shadow-sm)] sm:p-8">
+    <div className="rounded-2xl border border-slate-200 bg-slate-950 p-6 text-white shadow-(--shadow-sm) sm:p-8">
       <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-indigo-400">
         GET IN TOUCH
       </span>

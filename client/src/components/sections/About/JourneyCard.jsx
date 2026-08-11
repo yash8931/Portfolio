@@ -23,7 +23,7 @@ function JourneyTimeline({ items }) {
   return (
     <div className="relative mt-7">
       {/* Timeline line */}
-      <div className="absolute bottom-3 left-[5px] top-3 w-px bg-slate-200" />
+      <div className="absolute bottom-3 left-1.25 top-3 w-px bg-slate-200" />
 
       <div className="space-y-6">
         {items.map((item) => (
@@ -118,7 +118,7 @@ function JourneyCard({ data }) {
           </div>
 
           {/* Stats panel */}
-          <div className="flex flex-col justify-between border-t border-slate-100 bg-gradient-to-b from-indigo-50/80 via-white to-fuchsia-50/70 p-5 sm:p-7 lg:border-l lg:border-t-0">
+          <div className="flex flex-col justify-between border-t border-slate-100 bg-linear-to-b from-indigo-50/80 via-white to-fuchsia-50/70 p-5 sm:p-7 lg:border-l lg:border-t-0">
             <div className="space-y-7">
               {/* Experience */}
               <div>
@@ -126,7 +126,7 @@ function JourneyCard({ data }) {
                   {data.stats.experience}
                 </p>
 
-                <p className="mt-1 max-w-[100px] text-[10px] leading-4 text-slate-500">
+                <p className="mt-1 max-w-25 text-[10px] leading-4 text-slate-500">
                   {data.stats.experienceLabel}
                 </p>
               </div>
@@ -137,7 +137,7 @@ function JourneyCard({ data }) {
                   {data.stats.projects}
                 </p>
 
-                <p className="mt-1 max-w-[100px] text-[10px] leading-4 text-slate-500">
+                <p className="mt-1 max-w-25 text-[10px] leading-4 text-slate-500">
                   {data.stats.projectsLabel}
                 </p>
               </div>
@@ -158,7 +158,7 @@ function JourneyCard({ data }) {
         </div>
 
         {/* Bottom accent */}
-        <div className="h-1 bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500 opacity-70" />
+        <div className="h-1 bg-linear-to-r from-indigo-500 via-violet-500 to-fuchsia-500 opacity-70" />
       </div>
     </SlideUp>
   );

@@ -7,7 +7,7 @@ function ExperienceTimeline() {
       {/* Vertical timeline */}
       <div
         aria-hidden="true"
-        className="absolute left-[189px] top-6 hidden h-[calc(100%-48px)] w-px bg-gradient-to-b from-indigo-200 via-slate-200 to-transparent lg:block"
+        className="absolute left-47.25 top-6 hidden h-[calc(100%-48px)] w-px bg-linear-to-b from-indigo-200 via-slate-200 to-transparent lg:block"
       />
 
       <div className="space-y-8">
@@ -16,7 +16,7 @@ function ExperienceTimeline() {
             {/* Timeline node */}
             <div
               aria-hidden="true"
-              className="absolute left-[182px] top-8 hidden h-4 w-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm ring-1 ring-indigo-100 lg:block"
+              className="absolute left-45.5 top-8 hidden h-4 w-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm ring-1 ring-indigo-100 lg:block"
             />
 
             <ExperienceTimelineItem experience={experience} index={index} />
