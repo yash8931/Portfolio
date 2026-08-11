@@ -45,7 +45,7 @@ function AchievementCard({ achievements = [] }) {
 
   return (
     <SlideUp>
-      <article className="group h-full min-h-[330px] rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_2px_12px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
+      <article className="group h-full min-h-82.5 rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_2px_12px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
         {/* Header */}
         <div className="flex items-center gap-2">
           <span className="flex h-3.5 w-3.5 items-center justify-center rounded-full bg-indigo-50">

@@ -3,7 +3,7 @@ import SlideUp from "../../animations/SlideUp";
 function ExperienceCard({ experience }) {
   return (
     <SlideUp>
-      <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[var(--shadow-md)] transition-shadow duration-300 hover:shadow-[var(--shadow-lg)]">
+      <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-(--shadow-md) transition-shadow duration-300 hover:shadow-(--shadow-lg)">
         <div className="grid lg:grid-cols-[230px_1fr_310px]">
 
           {/* Company */}

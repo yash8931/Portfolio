@@ -8,7 +8,7 @@ import { Mail, Smartphone, MapPin, Send, Quote } from "lucide-react";
 function TestimonialCard() {
   return (
     <SlideUp delay={0.1}>
-      <article className="group h-full min-h-[330px] rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_2px_12px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
+      <article className="group h-full min-h-82.5 rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_2px_12px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
         {/* Header */}
         <div className="flex items-center gap-2">
           <span className="flex h-3.5 w-3.5 items-center justify-center rounded-full bg-indigo-50">
@@ -28,7 +28,7 @@ function TestimonialCard() {
             className="fill-indigo-100 text-indigo-300"
           />
 
-          <p className="mt-3 max-w-[290px] text-[12px] leading-5 text-slate-600">
+          <p className="mt-3 max-w-72.5 text-[12px] leading-5 text-slate-600">
             Yashendra is a highly skilled developer with strong problem-solving
             abilities and great attention to detail. He consistently delivers
             high-quality solutions.
@@ -38,7 +38,7 @@ function TestimonialCard() {
         {/* Person */}
         <div className="mt-7 flex items-center gap-3">
           {/* Temporary avatar */}
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-slate-200 bg-gradient-to-br from-indigo-100 to-fuchsia-100">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-slate-200 bg-linear-to-br from-indigo-100 to-fuchsia-100">
             <span className="text-xs font-bold text-indigo-600">YS</span>
           </div>
 
@@ -56,7 +56,7 @@ function TestimonialCard() {
 function ConnectCard() {
   return (
     <SlideUp delay={0.15}>
-      <article className="group h-full min-h-[330px] rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_2px_12px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
+      <article className="group h-full min-h-82.5 rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_2px_12px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
         {/* Header */}
         <div className="text-[10px] font-bold uppercase tracking-wide text-slate-900">
           LET'S CONNECT

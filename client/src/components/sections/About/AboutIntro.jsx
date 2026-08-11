@@ -52,7 +52,7 @@ function AboutIntro({ data }) {
           Building the future
           <span className="block">
             with{" "}
-            <span className="bg-gradient-to-r from-indigo-600 to-fuchsia-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-indigo-600 to-fuchsia-500 bg-clip-text text-transparent">
               AI & Code
             </span>
           </span>

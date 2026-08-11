@@ -33,7 +33,7 @@ function Experience() {
             description="A snapshot of my professional journey and the work I've contributed to."
           />
 
-          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[var(--shadow-md)]">
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-(--shadow-md)">
             <div className="grid lg:grid-cols-[1fr_0.38fr]">
               {/* Main experience */}
               <div className="p-6 sm:p-8 lg:p-10">

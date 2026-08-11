@@ -11,12 +11,7 @@ import {
   FaMicrosoft,
 } from "react-icons/fa";
 
-import {
-  SiTailwindcss,
-  SiExpress,
-  SiMongodb,
-  SiMysql,
-} from "react-icons/si";
+import { SiTailwindcss, SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 
 const iconMap = {
   react: FaReact,
@@ -45,12 +40,10 @@ const iconMap = {
 
 function SkillRow({ skill }) {
   return (
-    <div className="group flex min-h-[76px] items-center border-b border-slate-100 py-4 last:border-b-0">
+    <div className="group flex min-h-19 items-center border-slate-100 py-4 not-last:border-b">
       {/* Category */}
-      <div className="w-[115px] shrink-0">
-        <h3 className="text-xs font-bold text-slate-900">
-          {skill.category}
-        </h3>
+      <div className="w-28.75 shrink-0">
+        <h3 className="text-xs font-bold text-slate-900">{skill.category}</h3>
       </div>
 
       {/* Technologies */}
