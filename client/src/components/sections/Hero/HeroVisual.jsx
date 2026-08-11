@@ -4,22 +4,22 @@ import leewayhertzLogo from "../../../assets/company/leewayhertzLogo.jpeg";
 
 function HeroVisual() {
   return (
-    <div className="relative mx-auto w-full max-w-[520px]">
+    <div className="relative mx-auto w-full max-w-130 px-4 sm:px-0">
       {/* Ambient glow */}
       <div
         aria-hidden="true"
-        className="absolute left-1/2 top-1/2 h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-100/70 blur-3xl"
+        className="absolute left-1/2 top-1/2 h-65 w-65 -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-100/70 blur-3xl sm:h-90 sm:w-90"
       />
 
       {/* Decorative dots */}
       <div
         aria-hidden="true"
-        className="absolute left-3 top-28 grid grid-cols-4 gap-2 opacity-50"
+        className="absolute left-0 top-20 grid grid-cols-4 gap-1.5 opacity-50 sm:left-3 sm:top-28 sm:gap-2"
       >
         {Array.from({ length: 16 }).map((_, index) => (
           <span
             key={index}
-            className="h-1.5 w-1.5 rounded-full bg-indigo-300"
+            className="h-1 w-1 rounded-full bg-indigo-300 sm:h-1.5 sm:w-1.5"
           />
         ))}
       </div>
@@ -27,32 +27,30 @@ function HeroVisual() {
       {/* Decorative circle */}
       <div
         aria-hidden="true"
-        className="absolute right-16 top-4 h-20 w-20 rounded-full border border-indigo-100"
+        className="absolute right-5 top-0 h-14 w-14 rounded-full border border-indigo-100 sm:right-16 sm:top-4 sm:h-20 sm:w-20"
       />
 
-      {/* Main image area */}
+      {/* Main image */}
       <Floating duration={5} distance={8}>
-        <div className="relative mx-auto aspect-[0.86] w-[78%] overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-slate-100 via-white to-indigo-100 shadow-[var(--shadow-lg)]">
-          {/* Temporary profile placeholder */}
+        <div className="relative mx-auto aspect-[0.86] w-[82%] overflow-hidden rounded-4xl bg-linear-to-br from-slate-100 via-white to-indigo-100 shadow-(--shadow-lg) sm:w-[78%] sm:rounded-5xl">
           <img
             src={profilePhoto}
             alt="Yashendra Singh"
             className="h-full w-full object-cover object-top"
           />
 
-          {/* Top light effect */}
-          <div className="absolute left-1/2 top-8 h-24 w-24 -translate-x-1/2 rounded-full bg-white/80 blur-2xl" />
+          <div className="absolute left-1/2 top-8 h-20 w-20 -translate-x-1/2 rounded-full bg-white/80 blur-2xl sm:h-24 sm:w-24" />
         </div>
       </Floating>
 
       {/* Currently working card */}
-      <div className="absolute right-0 top-8 w-[190px] rounded-2xl border border-slate-200/80 bg-gray-200 p-4 shadow-[var(--shadow-md)] backdrop-blur-xl">
-        <p className="text-[10px] font-medium text-slate-400">
+      <div className="absolute right-0 top-5 w-38.75 rounded-2xl border border-slate-200/80 bg-white/90 p-3 shadow-(--shadow-md) backdrop-blur-xl sm:top-8 sm:w-47.5 sm:p-4">
+        <p className="text-[9px] font-medium text-slate-400 sm:text-[10px]">
           Currently Working At
         </p>
 
-        <div className="mt-2 flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-950 text-xs font-bold text-white">
+        <div className="mt-2 flex items-center gap-2 sm:gap-3">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-950 sm:h-9 sm:w-9">
             <img
               src={leewayhertzLogo}
               alt="LeewayHertz"
@@ -60,40 +58,54 @@ function HeroVisual() {
             />
           </div>
 
-          <div>
-            <p className="text-xs font-bold text-slate-900">LeewayHertz</p>
+          <div className="min-w-0">
+            <p className="truncate text-[10px] font-bold text-slate-900 sm:text-xs">
+              LeewayHertz
+            </p>
 
-            <p className="text-[10px] text-slate-500">Software Engineer</p>
+            <p className="truncate text-[8px] text-slate-500 sm:text-[10px]">
+              Software Engineer
+            </p>
           </div>
         </div>
       </div>
 
       {/* Focus area card */}
-      <div className="absolute bottom-24 right-0 w-[180px] rounded-2xl border border-slate-200/80 bg-white/90 p-4 shadow-[var(--shadow-md)] backdrop-blur-xl">
-        <div className="flex items-start gap-3">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600">
+      <div className="absolute bottom-20 right-0 w-37.5 rounded-2xl border border-slate-200/80 bg-white/90 p-3 shadow-(--shadow-md) backdrop-blur-xl sm:bottom-24 sm:w-45 sm:p-4">
+        <div className="flex items-start gap-2 sm:gap-3">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-indigo-50 text-sm text-indigo-600 sm:h-9 sm:w-9">
             ✦
           </div>
 
-          <div>
-            <p className="text-[10px] text-slate-400">Focus Area</p>
+          <div className="min-w-0">
+            <p className="text-[9px] text-slate-400 sm:text-[10px]">
+              Focus Area
+            </p>
 
-            <p className="mt-1 text-xs font-semibold text-slate-900">
+            <p className="mt-1 text-[10px] font-semibold text-slate-900 sm:text-xs">
               AI Agents
             </p>
 
-            <p className="text-[10px] text-slate-500">Full Stack</p>
+            <p className="text-[9px] text-slate-500 sm:text-[10px]">
+              Full Stack
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Projects completed card */}
-      <div className="absolute bottom-4 left-0 w-[145px] rounded-2xl border border-slate-200/80 bg-white/95 p-4 shadow-[var(--shadow-md)]">
-        <p className="text-[10px] text-slate-400">Projects Completed</p>
+      {/* Projects completed */}
+      <div className="absolute bottom-1 left-0 w-31.25 rounded-2xl border border-slate-200/80 bg-white/95 p-3 shadow-(--shadow-md) backdrop-blur-xl sm:bottom-4 sm:w-36.25 sm:p-4">
+        <p className="text-[9px] text-slate-400 sm:text-[10px]">
+          Projects Completed
+        </p>
 
-        <p className="mt-1 text-2xl font-bold text-indigo-600">10+</p>
+        <p className="mt-1 text-xl font-bold text-indigo-600 sm:text-2xl">
+          10+
+        </p>
 
-        <p className="text-[10px] text-slate-500">Successfully delivered</p>
+        <p className="text-[9px] text-slate-500 sm:text-[10px]">
+          Successfully delivered
+        </p>
       </div>
     </div>
   );

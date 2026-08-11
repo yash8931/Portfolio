@@ -4,7 +4,7 @@ import Button from "../../ui/Button";
 
 function HeroContent() {
   return (
-    <div className="max-w-2xl">
+    <div className="w-full max-w-2xl">
       {/* Greeting */}
       <SlideUp>
         <Badge>👋 Hello, I’m</Badge>
@@ -12,38 +12,38 @@ function HeroContent() {
 
       {/* Name + role */}
       <SlideUp delay={0.1}>
-        <h1 className="mt-5 text-5xl font-bold leading-[1.02] tracking-[-0.04em] text-slate-950 sm:text-6xl lg:text-[4.25rem]">
+        <h1 className="mt-4 text-4xl font-bold leading-[1.05] tracking-[-0.04em] text-slate-950 sm:mt-5 sm:text-6xl lg:text-[4.25rem]">
           Yashendra Singh
         </h1>
 
-        <h2 className="mt-2 bg-gradient-to-r from-indigo-600 via-blue-600 to-fuchsia-500 bg-clip-text text-4xl font-bold tracking-[-0.035em] text-transparent sm:text-5xl lg:text-[3.5rem]">
+        <h2 className="mt-2 text-3xl font-bold tracking-[-0.035em] bg-linear-to-r from-indigo-600 via-blue-600 to-fuchsia-500 bg-clip-text text-transparent sm:text-5xl lg:text-[3.5rem]">
           Agentic AI Engineer
         </h2>
       </SlideUp>
 
       {/* Intro */}
       <SlideUp delay={0.2}>
-        <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg">
-          Full Stack Developer (MERN) | Building intelligent
-          solutions with AI agents and modern web technologies.
+        <p className="mt-5 max-w-xl text-sm leading-6 text-slate-600 sm:mt-6 sm:text-lg sm:leading-7">
+          Full Stack Developer (MERN) | Building intelligent solutions with AI
+          agents and modern web technologies.
         </p>
       </SlideUp>
 
       {/* Quick stats */}
       <SlideUp delay={0.3}>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-2 text-xs font-medium text-slate-700 shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-indigo-500" />
+        <div className="mt-5 flex flex-wrap gap-2.5 sm:mt-6 sm:gap-3">
+          <div className="inline-flex min-h-9 items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-700 shadow-sm sm:px-3.5 sm:text-xs">
+            <span className="h-2 w-2 shrink-0 rounded-full bg-indigo-500" />
             1+ Years Experience
           </div>
 
-          <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-2 text-xs font-medium text-slate-700 shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-emerald-500" />
+          <div className="inline-flex min-h-9 items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-700 shadow-sm sm:px-3.5 sm:text-xs">
+            <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
             Available for opportunities
           </div>
 
-          <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-2 text-xs font-medium text-slate-700 shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-red-400" />
+          <div className="inline-flex min-h-9 items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-700 shadow-sm sm:px-3.5 sm:text-xs">
+            <span className="h-2 w-2 shrink-0 rounded-full bg-red-400" />
             India
           </div>
         </div>
@@ -51,13 +51,17 @@ function HeroContent() {
 
       {/* CTA */}
       <SlideUp delay={0.4}>
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-          <Button href="#projects">
+        <div className="mt-6 flex w-full flex-col gap-2.5 sm:mt-7 sm:w-auto sm:flex-row sm:gap-3">
+          <Button href="#projects" className="w-full justify-center sm:w-auto">
             View My Work
             <span aria-hidden="true">→</span>
           </Button>
 
-          <Button href="#contact" variant="secondary">
+          <Button
+            href="#contact"
+            variant="secondary"
+            className="w-full justify-center sm:w-auto"
+          >
             Contact Me
             <span aria-hidden="true">↗</span>
           </Button>
@@ -66,7 +70,7 @@ function HeroContent() {
 
       {/* Social */}
       <SlideUp delay={0.5}>
-        <div className="mt-8 flex items-center gap-4">
+        <div className="mt-7 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4">
           <span className="text-xs font-medium text-slate-500">
             Connect with me
           </span>

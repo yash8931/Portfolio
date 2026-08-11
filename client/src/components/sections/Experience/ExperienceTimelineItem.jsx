@@ -29,7 +29,7 @@ function ExperienceTimelineItem({ experience, index }) {
         {/* Card */}
         <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_4px_20px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(15,23,42,0.09)] sm:p-7">
           {/* Gradient accent */}
-          <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500" />
+          <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-indigo-500 via-violet-500 to-fuchsia-500" />
 
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             {/* Company */}
@@ -107,7 +107,7 @@ function ExperienceTimelineItem({ experience, index }) {
                     key={`${item}-${itemIndex}`}
                     className="flex gap-3 text-sm leading-6 text-slate-700"
                   >
-                    <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />
+                    <span className="mt-2.25 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />
                     <span>{item}</span>
                   </li>
                 ))}

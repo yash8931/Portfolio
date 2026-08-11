@@ -36,7 +36,7 @@ function ContactForm() {
     "mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-400 focus:bg-white focus:ring-4 focus:ring-indigo-50";
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[var(--shadow-sm)] sm:p-8">
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-(--shadow-sm) sm:p-8">
       <div className="mb-7">
         <h2 className="text-xl font-bold text-slate-950 sm:text-2xl">
           Send me a message

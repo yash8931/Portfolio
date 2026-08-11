@@ -88,7 +88,7 @@ function GitHubCard({ github }) {
             ))}
           </div>
 
-          <div className="grid grid-cols-24 gap-[3px]">
+          <div className="grid grid-cols-24 gap-0.75">
             {Array.from({ length: 96 }).map((_, index) => {
               const intensity = index % 5;
 
@@ -103,7 +103,7 @@ function GitHubCard({ github }) {
               return (
                 <span
                   key={index}
-                  className={`aspect-square rounded-[2px] ${intensityClasses[intensity]}`}
+                  className={`aspect-square rounded-xs ${intensityClasses[intensity]}`}
                   aria-hidden="true"
                 />
               );
