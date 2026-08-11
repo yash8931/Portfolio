@@ -1,16 +1,18 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import headerLogo from "../../assets/company/headerLogo.png";
 
 const navigationItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Achievements", href: "#achievements" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", to: "/" },
+  { label: "About", to: "/#about" },
+  { label: "Experience", to: "/experience" },
+  { label: "Projects", to: "/projects" },
+  { label: "Skills", to: "/skills" },
+  { label: "Achievements", to: "/#achievements" },
+  { label: "Contact", to: "/contact" },
 ];
 
 function Navbar() {
@@ -25,11 +27,7 @@ function Navbar() {
       <Container>
         <nav className="flex h-[68px] items-center justify-between">
           {/* Logo */}
-          <a
-            href="#home"
-            onClick={closeMenu}
-            className="flex items-center gap-3"
-          >
+          <Link to="/" onClick={closeMenu} className="flex items-center gap-3">
             <img
               src={headerLogo}
               alt="Yashendra Singh"
@@ -39,24 +37,23 @@ function Navbar() {
             <span className="hidden text-sm font-bold text-slate-900 sm:block">
               Yashendra Singh
             </span>
-          </a>
+          </Link>
 
-          {/* Desktop navigation */}
+          {/* Desktop Navigation */}
           <div className="hidden items-center gap-6 lg:flex">
             {navigationItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
+              <Link
+                key={item.label}
+                to={item.to}
                 className="relative text-xs font-semibold text-slate-600 transition-colors hover:text-indigo-600"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
 
-          {/* Desktop actions */}
+          {/* Desktop Actions */}
           <div className="hidden items-center gap-3 md:flex">
-            {/* Theme placeholder */}
             <button
               type="button"
               aria-label="Toggle theme"
@@ -71,7 +68,7 @@ function Navbar() {
             </Button>
           </div>
 
-          {/* Mobile button */}
+          {/* Mobile Menu Button */}
           <button
             type="button"
             onClick={() => setIsMenuOpen((previous) => !previous)}
@@ -83,19 +80,19 @@ function Navbar() {
           </button>
         </nav>
 
-        {/* Mobile navigation */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="border-t border-slate-100 py-4 md:hidden">
             <div className="flex flex-col gap-1">
               {navigationItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
+                <Link
+                  key={item.label}
+                  to={item.to}
                   onClick={closeMenu}
-                  className="rounded-lg px-3 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-indigo-600"
+                  className="rounded-lg px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-indigo-600"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
 
               <Button
