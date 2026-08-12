@@ -3,6 +3,7 @@ import { ArrowDown, ArrowRight } from "lucide-react";
 
 import SlideUp from "../../animations/SlideUp";
 import Button from "../../ui/Button";
+import resume from "../../../assets/profile/Yashendra's_Resume.pdf";
 
 const tabs = [
   {
@@ -146,9 +147,10 @@ function JourneyCard({ data }) {
             {/* Resume */}
             <div className="mt-8">
               <Button
-                href="#resume"
-                variant="secondary"
+                href={resume}
+                variant="rider"
                 className="w-full justify-center text-[10px]"
+                download="Yashendra-Singh-Resume.pdf"
               >
                 Download Resume
                 <ArrowDown size={13} />

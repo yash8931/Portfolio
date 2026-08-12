@@ -16,7 +16,7 @@ function Hero() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-32 -top-10 h-80 w-80 rounded-full bg-blue-50/60 blur-3xl sm:right-0 sm:top-0 sm:h-125 sm:w-125"
+        className="pointer-events-none absolute -right-32 -top-10 h-80 w-80 rounded-full bg-fuchsia-50/50 blur-3xl sm:right-0 sm:top-0 sm:h-125 sm:w-125"
       />
 
       <Container>

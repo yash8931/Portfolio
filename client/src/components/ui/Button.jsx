@@ -11,11 +11,11 @@ function Button({
 }) {
   const variants = {
     primary:
-      "bg-indigo-600 text-white shadow-sm hover:bg-indigo-700",
+      "bg-linear-to-r from-indigo-600 via-blue-600 to-fuchsia-500 !text-white shadow-sm hover:opacity-90 transition-opacity",
     secondary:
       "border border-slate-200 bg-white text-slate-900 hover:bg-slate-50",
-    ghost:
-      "text-slate-700 hover:bg-slate-100",
+    ghost: "text-slate-700 hover:bg-slate-100",
+    rider: "!text-white bg-slate-600 hover:bg-slate-500",
   };
 
   const baseStyles =

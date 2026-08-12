@@ -39,14 +39,14 @@ function Experience() {
               <div className="p-6 sm:p-8 lg:p-10">
                 {/* Top */}
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-6">
                     {/* Company logo */}
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 text-sm font-bold text-indigo-600">
+                    <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 text-sm font-bold text-indigo-600">
                       {experience.logo ? (
                         <img
                           src={experience.logo}
                           alt={`${experience.company} logo`}
-                          className="h-full w-full object-contain p-2.5"
+                          className="h-full w-full object-contain"
                           loading="lazy"
                         />
                       ) : (

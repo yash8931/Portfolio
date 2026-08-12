@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 import Container from "../ui/Container";
 import Button from "../ui/Button";
+
 import headerLogo from "../../assets/company/headerLogo.png";
+import resume from "../../assets/profile/Yashendra's_Resume.pdf";
 
 const navigationItems = [
   { label: "Home", to: "/" },
@@ -23,7 +25,7 @@ function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/85 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
       <Container>
         <nav className="flex h-17 items-center justify-between">
           {/* Logo */}
@@ -54,6 +56,7 @@ function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden items-center gap-3 md:flex">
+            {/* Theme */}
             <button
               type="button"
               aria-label="Toggle theme"
@@ -62,7 +65,12 @@ function Navbar() {
               ☾
             </button>
 
-            <Button href="#resume" className="rounded-lg px-4 py-2.5 text-xs">
+            {/* Resume */}
+            <Button
+              href={resume}
+              download="Yashendra-Singh-Resume.pdf"
+              className="rounded-lg px-4 py-2.5 text-xs"
+            >
               Resume
               <span aria-hidden="true">↓</span>
             </Button>
@@ -95,12 +103,15 @@ function Navbar() {
                 </Link>
               ))}
 
+              {/* Mobile Resume */}
               <Button
-                href="#resume"
+                href={resume}
+                download="Yashendra-Singh-Resume.pdf"
                 onClick={closeMenu}
                 className="mt-2 w-full"
               >
                 Download Resume
+                <span aria-hidden="true">↓</span>
               </Button>
             </div>
           </div>

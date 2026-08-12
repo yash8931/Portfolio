@@ -3,7 +3,7 @@ import SlideUp from "../../animations/SlideUp";
 function ProjectCard({ project }) {
   return (
     <article className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[var(--shadow-sm)] transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-[var(--shadow-md)]">
-      <div className="relative h-[145px] overflow-hidden bg-gradient-to-br from-blue-50 via-white to-fuchsia-50">
+      <div className="relative h-[145px] overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-fuchsia-50">
         <div className="absolute inset-x-5 top-6 rounded-lg border border-white bg-white/90 p-2.5 shadow-lg backdrop-blur transition-transform duration-500 group-hover:-translate-y-1">
           <div className="flex gap-1.5">
             <div className="h-2 w-16 rounded bg-indigo-100" />
