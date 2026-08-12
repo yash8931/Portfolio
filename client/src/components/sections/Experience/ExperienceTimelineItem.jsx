@@ -34,12 +34,12 @@ function ExperienceTimelineItem({ experience, index }) {
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             {/* Company */}
             <div className="flex gap-4">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
+              <div className="flex h-16 w-18 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
                 {experience.logo ? (
                   <img
                     src={experience.logo}
                     alt={`${experience.company} logo`}
-                    className="h-full w-full object-contain p-2"
+                    className="h-full w-full object-contain"
                     loading="lazy"
                   />
                 ) : (

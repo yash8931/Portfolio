@@ -1,14 +1,7 @@
-import { Lightbulb, Zap, Users, Target, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import SlideUp from "../../animations/SlideUp";
 import Button from "../../ui/Button";
-
-const iconMap = {
-  bulb: Lightbulb,
-  zap: Zap,
-  users: Users,
-  target: Target,
-};
 
 const accentMap = {
   yellow: {
@@ -16,14 +9,14 @@ const accentMap = {
     icon: "border-amber-300 bg-amber-100 text-amber-600",
   },
 
-  purple: {
-    box: "border-violet-200 bg-violet-50/60",
-    icon: "border-violet-300 bg-violet-100 text-violet-600",
+  orange: {
+    box: "border-orange-200 bg-orange-50/60",
+    icon: "border-orange-300 bg-orange-100 text-orange-600",
   },
 
-  blue: {
-    box: "border-blue-200 bg-blue-50/60",
-    icon: "border-blue-300 bg-blue-100 text-blue-600",
+  green: {
+    box: "border-emerald-200 bg-emerald-50/60",
+    icon: "border-emerald-300 bg-emerald-100 text-emerald-600",
   },
 
   pink: {
@@ -70,7 +63,7 @@ function AboutIntro({ data }) {
       <SlideUp delay={0.3}>
         <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-5 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
           {data.highlights.map((item) => {
-            const Icon = iconMap[item.icon] || Lightbulb;
+            const Icon = item.icon;
             const accent = accentMap[item.accent] || accentMap.blue;
 
             return (

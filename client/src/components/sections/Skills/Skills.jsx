@@ -1,5 +1,6 @@
 import SkillRow from "./SkillRow";
 import { skillsData } from "../../../data/skills";
+import { Link } from "react-router-dom";
 
 function Skills() {
   return (
@@ -15,20 +16,17 @@ function Skills() {
           </h2>
         </div>
 
-        <button
-          type="button"
+        <Link
+          to="/skills"
           className="hidden rounded-lg border border-slate-200 bg-white px-3 py-2 text-[10px] font-semibold text-slate-600 shadow-sm transition hover:border-indigo-200 hover:text-indigo-600 sm:block"
         >
           View All Skills →
-        </button>
+        </Link>
       </div>
 
-      <div className="rounded-2xl border border-slate-200 bg-white px-4 shadow-[var(--shadow-sm)] sm:px-5">
+      <div className="rounded-2xl border border-slate-200 bg-linear-to-br from-slate-100 via-indigo-50 to-violet-100 px-4 shadow-[var(--shadow-sm)] sm:px-5">
         {skillsData.map((skill) => (
-          <SkillRow
-            key={skill.category}
-            skill={skill}
-          />
+          <SkillRow key={skill.category} skill={skill} />
         ))}
       </div>
     </div>
