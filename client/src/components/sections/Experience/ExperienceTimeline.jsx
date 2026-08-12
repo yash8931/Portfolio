@@ -16,7 +16,7 @@ function ExperienceTimeline() {
             {/* Timeline node */}
             <div
               aria-hidden="true"
-              className="absolute left-45.5 top-8 hidden h-4 w-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm ring-1 ring-indigo-100 lg:block"
+              className="absolute left-45.5 top-8 hidden h-8 w-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm ring-1 ring-indigo-100 lg:block"
             />
 
             <ExperienceTimelineItem experience={experience} index={index} />

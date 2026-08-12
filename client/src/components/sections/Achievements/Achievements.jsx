@@ -39,11 +39,13 @@ function TestimonialCard() {
         <div className="mt-7 flex items-center gap-3">
           {/* Temporary avatar */}
           <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-slate-200 bg-linear-to-br from-indigo-100 to-fuchsia-100">
-            <span className="text-xs font-bold text-indigo-600">YS</span>
+            <span className="text-xs font-bold text-indigo-600">ST</span>
           </div>
 
           <div>
-            <p className="text-[11px] font-bold text-slate-900">Team Lead</p>
+            <p className="text-[11px] font-bold text-slate-900">
+              Siddharth Tanwar (Tech Lead)
+            </p>
 
             <p className="mt-0.5 text-[10px] text-slate-500">LeewayHertz</p>
           </div>
@@ -77,7 +79,7 @@ function ConnectCard() {
           {/* CTA */}
           <a
             href="mailto:singhyashendra321@gmail.com"
-            className="mt-4 flex h-10 items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 text-[11px] font-semibold text-white shadow-sm transition-all duration-300 hover:bg-blue-700 hover:shadow-md"
+            className="mt-4 flex h-10 items-center justify-center gap-2 rounded-lg bg-linear-to-r from-indigo-600 via-blue-600 to-fuchsia-500 px-4 text-[11px] font-semibold text-white shadow-sm transition-all duration-300 hover:opacity-90 hover:shadow-md"
           >
             Get In Touch
             <Send size={13} />

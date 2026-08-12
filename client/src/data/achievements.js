@@ -40,8 +40,8 @@ export const achievementsData = {
   ],
 
   github: {
-    username: "your-github-username",
-    profileUrl: "https://github.com/your-github-username",
+    username: "yash8931",
+    profileUrl: "https://github.com/yash8931",
     repositories: "20+",
     contributions: "500+",
   },

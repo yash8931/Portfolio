@@ -4,20 +4,20 @@ const contactItems = [
   {
     icon: FaEnvelope,
     label: "Email",
-    value: "your@email.com",
-    href: "mailto:your@email.com",
+    value: "singyashendra321@gmail.com",
+    href: "mailto:singhyashendra321@gmail.com",
   },
   {
     icon: FaLinkedinIn,
     label: "LinkedIn",
     value: "Let's connect professionally",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/yashendra-singh8931/",
   },
   {
     icon: FaGithub,
     label: "GitHub",
     value: "Explore my work",
-    href: "https://github.com/",
+    href: "https://github.com/yash8931",
   },
 ];
 

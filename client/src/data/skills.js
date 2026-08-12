@@ -2,12 +2,8 @@ export const skillsData = [
   {
     category: "Frontend",
     technologies: [
-      { name: "React", icon: "react" },
-      { name: "HTML5", icon: "html" },
-      { name: "CSS3", icon: "css" },
+      { name: "React.js", icon: "react" },
       { name: "JavaScript", icon: "javascript" },
-      { name: "Tailwind", icon: "tailwind" },
-      { name: "Bootstrap", icon: "bootstrap" },
     ],
   },
 
@@ -15,29 +11,29 @@ export const skillsData = [
     category: "Backend",
     technologies: [
       { name: "Node.js", icon: "node" },
-      { name: "Express", icon: "express" },
-      { name: "MongoDB", icon: "mongodb" },
+      { name: "Express.js", icon: "express" },
       { name: "MySQL", icon: "mysql" },
+      { name: "MongoDB", icon: "mongodb" },
     ],
   },
 
   {
-    category: "AI / ML",
+    category: "AI / GenAI",
     technologies: [
-      { name: "OpenAI", icon: "openai" },
-      { name: "AI Agents", icon: "ai" },
-      { name: "LLM", icon: "llm" },
+      { name: "Agentic AI", icon: "ai" },
+      { name: "LLM Integration", icon: "llm" },
       { name: "Prompt Engineering", icon: "prompt" },
+      { name: "OpenAI", icon: "openai" },
     ],
   },
 
   {
     category: "Cloud / DevOps",
     technologies: [
-      { name: "Azure", icon: "azure" },
+      { name: "Microsoft Azure", icon: "azure" },
       { name: "Docker", icon: "docker" },
-      { name: "Git", icon: "git" },
       { name: "GitHub", icon: "github" },
+      { name: "Git", icon: "git" },
     ],
   },
 ];

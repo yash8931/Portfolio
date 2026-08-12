@@ -105,7 +105,7 @@ const categoryMeta = {
   Frontend: {
     number: "01",
     description: "Building responsive, accessible and modern user interfaces.",
-    accent: "from-cyan-400 to-blue-500",
+    accent: "from-indigo-600 via-blue-600 to-fuchsia-500",
   },
 
   Backend: {
@@ -126,7 +126,7 @@ const categoryMeta = {
     number: "04",
     description:
       "Development workflows, cloud platforms, containers and source control.",
-    accent: "from-blue-400 to-indigo-500",
+    accent: "from-indigo-500 to-fuchsia-500",
   },
 };
 

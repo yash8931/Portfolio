@@ -1,3 +1,10 @@
+import {
+  FaLightbulb,
+  FaGraduationCap,
+  FaUsers,
+  FaBullseye,
+} from "react-icons/fa";
+
 export const profileData = {
   about: {
     eyebrow: "ABOUT ME",
@@ -10,19 +17,23 @@ export const profileData = {
     highlights: [
       {
         title: "Problem Solver",
-        icon: "✧",
+        icon: FaLightbulb,
+        accent: "yellow",
       },
       {
         title: "Quick Learner",
-        icon: "◇",
+        icon: FaGraduationCap,
+        accent: "orange",
       },
       {
         title: "Team Player",
-        icon: "♧",
+        icon: FaUsers,
+        accent: "green",
       },
       {
         title: "Detail Oriented",
-        icon: "◎",
+        icon: FaBullseye,
+        accent: "pink",
       },
     ],
   },
@@ -69,7 +80,7 @@ export const profileData = {
   ],
 
   stats: {
-    experience: "1+",
+    experience: "1.5+",
     experienceLabel: "Years of Experience",
 
     projects: "10+",

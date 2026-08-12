@@ -1,6 +1,7 @@
 import SlideUp from "../../animations/SlideUp";
 import Badge from "../../ui/Badge";
 import Button from "../../ui/Button";
+import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 
 function HeroContent() {
   return (
@@ -16,14 +17,14 @@ function HeroContent() {
           Yashendra Singh
         </h1>
 
-        <h2 className="mt-2 text-3xl font-bold tracking-[-0.035em] bg-linear-to-r from-indigo-600 via-blue-600 to-fuchsia-500 bg-clip-text text-transparent sm:text-5xl lg:text-[3.5rem]">
-          Agentic AI Engineer
+        <h2 className="mt-2 pb-1 sm:pb-2 text-3xl font-bold leading-normal tracking-[-0.035em] bg-linear-to-r from-indigo-600 via-blue-600 to-fuchsia-500 bg-clip-text text-transparent sm:text-5xl lg:text-[3.5rem]">
+          AI Engineer
         </h2>
       </SlideUp>
 
       {/* Intro */}
       <SlideUp delay={0.2}>
-        <p className="mt-5 max-w-xl text-sm leading-6 text-slate-600 sm:mt-6 sm:text-lg sm:leading-7">
+        <p className="max-w-xl text-sm leading-6 text-slate-600 sm:mt-6 sm:text-lg sm:leading-7">
           Full Stack Developer (MERN) | Building intelligent solutions with AI
           agents and modern web technologies.
         </p>
@@ -34,12 +35,12 @@ function HeroContent() {
         <div className="mt-5 flex flex-wrap gap-2.5 sm:mt-6 sm:gap-3">
           <div className="inline-flex min-h-9 items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-700 shadow-sm sm:px-3.5 sm:text-xs">
             <span className="h-2 w-2 shrink-0 rounded-full bg-indigo-500" />
-            1+ Years Experience
+            1.5+ Years Experience
           </div>
 
           <div className="inline-flex min-h-9 items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-700 shadow-sm sm:px-3.5 sm:text-xs">
             <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
-            Available for opportunities
+            Available for new opportunities
           </div>
 
           <div className="inline-flex min-h-9 items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-[11px] font-medium text-slate-700 shadow-sm sm:px-3.5 sm:text-xs">
@@ -52,13 +53,17 @@ function HeroContent() {
       {/* CTA */}
       <SlideUp delay={0.4}>
         <div className="mt-6 flex w-full flex-col gap-2.5 sm:mt-7 sm:w-auto sm:flex-row sm:gap-3">
-          <Button href="#projects" className="w-full justify-center sm:w-auto">
+          <Button
+            href="/projects"
+            variant="primary"
+            className="w-full justify-center sm:w-auto"
+          >
             View My Work
             <span aria-hidden="true">→</span>
           </Button>
 
           <Button
-            href="#contact"
+            href="/contact"
             variant="secondary"
             className="w-full justify-center sm:w-auto"
           >
@@ -77,27 +82,31 @@ function HeroContent() {
 
           <div className="flex gap-2">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/yashendra-singh8931/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-xs font-bold text-slate-600 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:text-indigo-600"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:text-indigo-600"
             >
-              in
+              <FaLinkedinIn size={16} />
             </a>
 
             <a
-              href="#"
+              href="https://github.com/yash8931"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="GitHub"
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-xs font-bold text-slate-700 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:text-indigo-600"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:text-indigo-600"
             >
-              GH
+              <FaGithub size={17} />
             </a>
 
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:singhyashendra321@gmail.com"
               aria-label="Email"
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-xs font-bold text-slate-600 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:text-indigo-600"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:text-indigo-600"
             >
-              @
+              <FaEnvelope size={15} />
             </a>
           </div>
         </div>
