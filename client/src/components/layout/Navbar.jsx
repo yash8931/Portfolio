@@ -25,7 +25,7 @@ function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-2xl">
       <Container>
         <nav className="flex h-17 items-center justify-between">
           {/* Logo */}

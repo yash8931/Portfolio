@@ -1,14 +1,19 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import InteractiveBackground from "../ui/InteractiveBackground";
 
 function PageLayout({ children }) {
   return (
-    <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text-primary)]">
-      <Navbar />
+    <div className="relative min-h-screen overflow-x-hidden bg-slate-50 text-[var(--color-text-primary)]">
+      <InteractiveBackground />
 
-      <main>{children}</main>
+      <div className="relative z-10">
+        <Navbar />
 
-      <Footer />
+        <main>{children}</main>
+
+        <Footer />
+      </div>
     </div>
   );
 }
