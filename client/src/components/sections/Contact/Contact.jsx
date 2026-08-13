@@ -7,7 +7,7 @@ import ContactInfo from "./ContactInfo";
 function Contact() {
   return (
     <PageLayout>
-      <section className="min-h-[calc(100vh-68px)] bg-slate-50 py-16 sm:py-20">
+      <section className="min-h-[calc(100vh-68px)] bg-transparent py-16 sm:py-20">
         <Container>
           {/* Header */}
           <div className="mb-10 max-w-2xl">
