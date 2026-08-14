@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const initialForm = {
   name: "",
@@ -6,6 +7,10 @@ const initialForm = {
   subject: "",
   message: "",
 };
+
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 function ContactForm() {
   const [form, setForm] = useState(initialForm);
@@ -25,11 +30,31 @@ function ContactForm() {
 
     setStatus("loading");
 
-    // Form service will be connected here later.
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          to_name: "Yashendra",
+          from_name: form.name,
+          from_email: form.email,
+          subject: form.subject,
+          message: form.message,
+          reply_to: form.email,
+        },
+        {
+          publicKey: EMAILJS_PUBLIC_KEY,
+        },
+      );
 
-    setStatus("success");
-    setForm(initialForm);
+      setStatus("success");
+      setForm(initialForm);
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      console.error("Status:", error?.status);
+      console.error("Text:", error?.text);
+      setStatus("error");
+    }
   };
 
   const inputClass =
@@ -133,10 +158,17 @@ function ContactForm() {
           />
         </div>
 
-        {/* Status */}
+        {/* Success */}
         {status === "success" && (
           <div className="rounded-xl border border-emerald-100 bg-emerald-50 px-4 py-3 text-xs font-medium text-emerald-600">
             ✓ Message sent successfully!
+          </div>
+        )}
+
+        {/* Error */}
+        {status === "error" && (
+          <div className="rounded-xl border border-red-100 bg-red-50 px-4 py-3 text-xs font-medium text-red-600">
+            ✕ Something went wrong. Please try again.
           </div>
         )}
 
