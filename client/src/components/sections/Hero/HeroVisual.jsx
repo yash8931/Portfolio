@@ -44,13 +44,13 @@ function HeroVisual() {
       </Floating>
 
       {/* Currently working card */}
-      <div className="absolute right-0 top-5 w-38.75 rounded-2xl border border-slate-200/80 bg-white/90 p-3 shadow-(--shadow-md) backdrop-blur-xl sm:top-8 sm:w-47.5 sm:p-4">
-        <p className="text-[9px] font-medium text-slate-400 sm:text-[10px]">
+      <div className="absolute -right-2 top-5 w-31 rounded-2xl border border-slate-200/80 bg-white/90 p-2 shadow-(--shadow-md) backdrop-blur-xl sm:-right-4 sm:top-8 sm:w-39 sm:p-3">
+        <p className="text-[8px] font-medium text-slate-400 sm:text-[9px]">
           Currently Working At
         </p>
 
-        <div className="mt-2 flex items-center gap-2 sm:gap-3">
-          <div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-950 sm:h-9 sm:w-9">
+        <div className="mt-1.5 flex items-center gap-1.5 sm:gap-2">
+          <div className="flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-950 sm:h-8 sm:w-8">
             <img
               src={leewayhertzLogo}
               alt="LeewayHertz"
@@ -59,11 +59,11 @@ function HeroVisual() {
           </div>
 
           <div className="min-w-0">
-            <p className="truncate text-[10px] font-bold text-slate-900 sm:text-xs">
+            <p className="truncate text-[9px] font-bold text-slate-900 sm:text-[10px]">
               LeewayHertz
             </p>
 
-            <p className="truncate text-[8px] text-slate-500 sm:text-[10px]">
+            <p className="truncate text-[7px] text-slate-500 sm:text-[9px]">
               Software Engineer
             </p>
           </div>
@@ -71,22 +71,22 @@ function HeroVisual() {
       </div>
 
       {/* Focus area card */}
-      <div className="absolute bottom-20 right-0 w-37.5 rounded-2xl border border-slate-200/80 bg-white/90 p-3 shadow-(--shadow-md) backdrop-blur-xl sm:bottom-24 sm:w-45 sm:p-4">
-        <div className="flex items-start gap-2 sm:gap-3">
-          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-indigo-50 text-sm text-indigo-600 sm:h-9 sm:w-9">
+      <div className="absolute -right-2 bottom-16 w-30 rounded-2xl border border-slate-200/80 bg-white/90 p-2 shadow-(--shadow-md) backdrop-blur-xl sm:-right-4 sm:bottom-20 sm:w-37 sm:p-3">
+        <div className="flex items-start gap-1.5 sm:gap-2">
+          <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-indigo-50 text-xs text-indigo-600 sm:h-8 sm:w-8">
             ✦
           </div>
 
           <div className="min-w-0">
-            <p className="text-[9px] text-slate-400 sm:text-[10px]">
+            <p className="text-[8px] text-slate-400 sm:text-[9px]">
               Focus Area
             </p>
 
-            <p className="mt-1 text-[10px] font-semibold text-slate-900 sm:text-xs">
+            <p className="mt-1 text-[9px] font-semibold text-slate-900 sm:text-[10px]">
               AI Agents
             </p>
 
-            <p className="text-[9px] text-slate-500 sm:text-[10px]">
+            <p className="text-[8px] text-slate-500 sm:text-[9px]">
               Full Stack
             </p>
           </div>
@@ -94,16 +94,14 @@ function HeroVisual() {
       </div>
 
       {/* Projects completed */}
-      <div className="absolute bottom-1 left-0 w-31.25 rounded-2xl border border-slate-200/80 bg-white/95 p-3 shadow-(--shadow-md) backdrop-blur-xl sm:bottom-4 sm:w-36.25 sm:p-4">
-        <p className="text-[9px] text-slate-400 sm:text-[10px]">
+      <div className="absolute -left-2 bottom-3 w-28 rounded-2xl border border-slate-200/80 bg-white/95 p-2 shadow-(--shadow-md) backdrop-blur-xl sm:-left-4 sm:bottom-6 sm:w-32 sm:p-3">
+        <p className="text-[8px] text-slate-400 sm:text-[9px]">
           Projects Completed
         </p>
 
-        <p className="mt-1 text-xl font-bold text-indigo-600 sm:text-2xl">
-          10+
-        </p>
+        <p className="mt-1 text-lg font-bold text-indigo-600 sm:text-xl">10+</p>
 
-        <p className="text-[9px] text-slate-500 sm:text-[10px]">
+        <p className="text-[8px] text-slate-500 sm:text-[9px]">
           Successfully delivered
         </p>
       </div>
